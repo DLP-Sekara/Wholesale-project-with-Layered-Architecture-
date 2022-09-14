@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="lblManageOrderPage" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageOrderFormController">
+   <children>
+      <Label layoutX="80.0" layoutY="148.0" text="Order Id :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="463.0" text="Quantity :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="385.0" text="Unit Price :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQuantity" layoutX="178.0" layoutY="462.0" prefHeight="25.0" prefWidth="287.0" />
+      <TextField fx:id="txtUnitPrice" layoutX="178.0" layoutY="382.0" prefHeight="25.0" prefWidth="287.0" />
+      <TableView fx:id="tblOrderDetails" layoutX="40.0" layoutY="81.0" prefHeight="563.0" prefWidth="816.0" AnchorPane.rightAnchor="40.0">
+         <columns>
+            <TableColumn fx:id="colItemCode" prefWidth="113.0" text="Item Code" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="193.0" text="Unit Price" />
+            <TableColumn fx:id="colQuantity" prefWidth="147.0" text="Quantity" />
+            <TableColumn fx:id="colDiscount" prefWidth="199.0" text="Discount" />
+            <TableColumn fx:id="colAmount" prefWidth="163.0" text="Amount" />
+         </columns>
+      </TableView>
+      <Label layoutX="36.0" layoutY="83.0" text="Select Customer :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCustomerId" layoutX="180.0" layoutY="84.0" prefHeight="25.0" prefWidth="287.0" />
+      <TextField fx:id="txtDiscount" layoutX="178.0" layoutY="542.0" prefHeight="25.0" prefWidth="287.0" />
+      <Label layoutX="78.0" layoutY="543.0" text="Discount :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#backToDashBoard" text="&lt;" />
+      <ComboBox fx:id="cmbOrderIds" layoutX="180.0" layoutY="149.0" prefHeight="25.0" prefWidth="287.0" />
+      <Button fx:id="deleteOrderButton" layoutX="275.0" layoutY="196.0" mnemonicParsing="false" onAction="#deleteorderOnAction" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #e74c3c;" text="Delete Order" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="confirmButton" layoutX="326.0" layoutY="614.0" mnemonicParsing="false" onAction="#UpdateOrderDetails" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #2ecc71;" text="Confirm Edit" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="72.0" layoutY="305.0" text="Item Code :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtItemCode" layoutX="178.0" layoutY="302.0" onAction="#setOnOrderDetails" prefHeight="25.0" prefWidth="287.0" />
+      <Separator layoutX="180.0" layoutY="254.0" prefHeight="4.0" prefWidth="287.0" />
+      <Label layoutX="51.0" layoutY="17.0" text="Manage Customer Orders" textFill="#310ef8">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="352.0" layoutY="43.0" prefHeight="11.0" prefWidth="970.0" />
+      <Button fx:id="deleteItemButton" layoutX="216.0" layoutY="614.0" mnemonicParsing="false" onAction="#deleteorderItemOnAction" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #e74c3c;" text="Delete Item" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

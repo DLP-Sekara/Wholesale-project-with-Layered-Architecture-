@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Wholesale:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Wholesale_jar</output-path>
+    <root id="archive" name="Wholesale.jar">
+      <element id="module-output" name="Wholesale" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mysql-connector-java-8.0.25.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

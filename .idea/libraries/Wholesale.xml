@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Wholesale">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Wholesale/out/artifacts/Wholesale_jar/Wholesale.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
